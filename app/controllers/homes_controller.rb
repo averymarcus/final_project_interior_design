@@ -3,7 +3,7 @@ class HomesController < ApplicationController
 
   # GET /homes
   def index
-    @homes = Home.all
+    @homes = Home.page(params[:page]).per(10)
   end
 
   # GET /homes/1
