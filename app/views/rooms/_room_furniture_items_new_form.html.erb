@@ -1,0 +1,32 @@
+<!-- Form furniture start -->
+<%= form_with(model: @furniture, local: true) do |f| %>
+<!-- Form furniture end -->
+
+  <!-- Label and input for room_id start -->
+  <!-- Input for room_id start -->
+  <%= f.hidden_field :room_id, value: @room.id %>
+  <!-- Input for room_id end -->
+  <!-- Label and input for room_id end -->
+
+  <!-- Label and input for image start -->
+  <div class="form-group">
+    <%= f.label :image %>
+
+    <!-- Input for image start -->
+    <%= f.text_field :image, class: "form-control" %>
+    <!-- Input for image end -->
+  </div>
+  <!-- Label and input for image end -->
+
+  <!-- Label and input for furniture_name start -->
+  <div class="form-group">
+    <%= f.label :furniture_name %>
+
+    <!-- Input for furniture_name start -->
+    <%= f.text_field :furniture_name, class: "form-control" %>
+    <!-- Input for furniture_name end -->
+  </div>
+  <!-- Label and input for furniture_name end -->
+
+  <%= f.submit "Create furniture", class: "btn btn-block btn-outline-secondary" %>
+<% end %>
