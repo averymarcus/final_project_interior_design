@@ -14,5 +14,4 @@ class Furniture < ApplicationRecord
   def to_s
     room.to_s
   end
-
 end

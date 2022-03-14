@@ -4,8 +4,8 @@ class Room < ApplicationRecord
   belongs_to :home
 
   has_many   :furniture_items,
-             :class_name => "Furniture",
-             :dependent => :destroy
+             class_name: "Furniture",
+             dependent: :destroy
 
   # Indirect associations
 
@@ -16,5 +16,4 @@ class Room < ApplicationRecord
   def to_s
     room_name
   end
-
 end

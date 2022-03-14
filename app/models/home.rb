@@ -2,7 +2,7 @@ class Home < ApplicationRecord
   # Direct associations
 
   has_many   :rooms,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -13,5 +13,4 @@ class Home < ApplicationRecord
   def to_s
     owner
   end
-
 end

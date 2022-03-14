@@ -11,5 +11,4 @@ class FurnitureResource < ApplicationResource
   belongs_to :room
 
   # Indirect associations
-
 end
